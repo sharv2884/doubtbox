@@ -1,30 +1,53 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>DoubtBox</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoubtBox - Student Q&A</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <header>
-        <h1>DoubtBox</h1>
-        <p>Ask Questions Anonymously</p>
+    <header class="header">
+        <div class="header-content">
+            <a href="#" class="logo">DoubtBox</a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search doubts...">
+            </div>
+        </div>
     </header>
 
-    <main>
-        <section class="post-doubt">
-            <h2>Post a Doubt</h2>
-            <form>
-                <textarea placeholder="What's your doubt?"></textarea>
-                <button type="submit">Post Doubt</button>
-            </form>
-        </section>
-        <section class="doubts-list">
-            <h2>Recent Doubts</h2>
-            <div class="doubt-card">
-                <p>How do I center a div in CSS?</p>
-                <small>2 hours ago</small>
+    <div class="container">
+        <main class="main-content">
+            <div class="post-form">
+                <h3>Ask Your Doubt</h3>
+                <form id="postForm">
+                    <div class="form-group">
+                        <input type="text" id="doubtTitle" placeholder="Title (optional)">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="doubtText" placeholder="What's your doubt?"></textarea>
+                    </div>
+                    <button type="submit" class="post-btn">Post Doubt</button>
+                </form>
             </div>
-        </section>
-    </main>
+
+            <div id="doubtsContainer">
+                <div class="doubt-card">
+                    <div class="doubt-header">Posted by anonymous • 2 hours ago</div>
+                    <div class="doubt-content">
+                        <h3 class="doubt-title">How do I center a div in CSS?</h3>
+                        <p class="doubt-text">I've tried using text-align: center but it's not working.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-card">
+                <h3>About DoubtBox</h3>
+                <p>A place for students to ask questions anonymously.</p>
+            </div>
+        </aside>
+    </div>
 </body>
 </html>
