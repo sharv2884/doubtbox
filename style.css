@@ -24,3 +24,40 @@ body {
     align-items: center;
     padding: 0 16px;
 }
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4500;
+    text-decoration: none;
+    margin-right: 24px;
+}
+
+.search-bar {
+    flex: 1;
+    max-width: 500px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px 16px;
+    background-color: #272729;
+    border: 1px solid #343536;
+    border-radius: 20px;
+    color: #d7dadc;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 24px;
+    padding: 20px 16px;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.sidebar {
+    width: 300px;
+}
