@@ -61,3 +61,74 @@ body {
 .sidebar {
     width: 300px;
 }
+.post-form {
+    background-color: #1a1a1b;
+    border: 1px solid #343536;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #272729;
+    border: 1px solid #343536;
+    border-radius: 4px;
+    color: #d7dadc;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.post-btn {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.doubt-card {
+    background-color: #1a1a1b;
+    border: 1px solid #343536;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding: 16px;
+}
+
+.doubt-header {
+    font-size: 12px;
+    color: #818384;
+    margin-bottom: 8px;
+}
+
+.doubt-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #d7dadc;
+}
+
+.doubt-text {
+    color: #d7dadc;
+    line-height: 1.5;
+}
+
+.sidebar-card {
+    background-color: #1a1a1b;
+    border: 1px solid #343536;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
