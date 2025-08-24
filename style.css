@@ -132,3 +132,36 @@ body {
     padding: 16px;
     margin-bottom: 16px;
 }
+.doubt-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #343536;
+}
+
+.vote-section {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.vote-btn {
+    background: none;
+    border: none;
+    color: #818384;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 2px;
+}
+
+.vote-btn:hover {
+    background-color: #272729;
+}
+
+.vote-count {
+    font-weight: bold;
+    min-width: 30px;
+    text-align: center;
+}

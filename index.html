@@ -49,5 +49,45 @@
             </div>
         </aside>
     </div>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Handle form submission
+    document.getElementById('postForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const title = document.getElementById('doubtTitle').value || 'Untitled';
+        const text = document.getElementById('doubtText').value;
+        
+        if (text.trim()) {
+            const newDoubtCard = createDoubtCard(title, text);
+            document.getElementById('doubtsContainer').insertBefore(newDoubtCard, document.getElementById('doubtsContainer').firstChild);
+            
+            // Clear form
+            document.getElementById('doubtTitle').value = '';
+            document.getElementById('doubtText').value = '';
+        }
+    });
+
+    function createDoubtCard(title, text) {
+        const card = document.createElement('div');
+        card.className = 'doubt-card';
+        card.innerHTML = `
+            <div class="doubt-header">Posted by anonymous • just now</div>
+            <div class="doubt-content">
+                <h3 class="doubt-title">${title}</h3>
+                <p class="doubt-text">${text}</p>
+            </div>
+        `;
+        return card;
+    }
+});
+</script>
+<div class="doubt-actions">
+    <div class="vote-section">
+        <button class="vote-btn">▲</button>
+        <span class="vote-count">24</span>
+        <button class="vote-btn">▼</button>
+    </div>
+    <button class="action-btn">💬 Comments</button>
+</div>
 </body>
 </html>
